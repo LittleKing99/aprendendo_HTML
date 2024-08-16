@@ -11,32 +11,71 @@
 
     <body>
         <h1>-- Segunda página --</h1>
-        <p>Existem outras centenas de detalhes para aprender, e até agora eu aprendi sobre: </p>
-        <ol> <!--Cada <li> corresponde a um número, exatamente como uma lista ordenada.-->
-            <li>Head element;</li>
-            <li>Text Basics;</li>
-            <li>e estou aprendendo agora <strong>List Types.</strong></li>
-        </ol>
+        <p> Bem-vindo(a) ao meu segundo teste em criar páginas usando HTML! Espero que a sua experiência seja 
+            mais agradável dessa vez.</p>
+        <hr>
+
+        <nav> <!--Criando uma pequena lista de links para navegar entre as seções.-->
+            <ul>
+                <li> <a href="#html">O que foi aprendido até agora em HTML;</a> </li> 
+                <li> <a href="#locais agradáveis">Locais agradáveis;</a> </li> 
+                <li> <a href="#locais perigosos">Locais perigosos;</a> </li> <!--É necessário colocar '#' no início 
+                para referenciar o id das seções-->
+                <li> <a href="#links">Links</a></li>
+            </ul>
+        </nav>
 
         <hr>
-        <h2>Lista de locais agradáveis</h2> <br>
-        <ul> <!--Cada <li> corresponde a uma bolinha, sendo uma outra forma de representar listas, assim como listas
-            não ordenadas. Não é necessário, geralmente, indicar os parágrafos dentro da tag <li>.-->
-            <li> <p>Cancún</p> </li>
-            <li> Margaritaville </li>
-            <li> <p>Bahia Petempinch</p> </li>
-        </ul>
+        <section id="html"> <!--As seções podem ter um ID que serve como link para direcionar diretamente à seção correspondente.-->
+            <p>Existem outras centenas de detalhes para aprender, e até agora eu apenas estudei sobre: </p>
+            <ol> <!--Cada <li> corresponde a um número, exatamente como uma lista ordenada.-->
+                <li>Head element;</li>
+                <li>Text Basics;</li>
+                <li>List Types;</li>
+                <li>Add Links e etc.</li>
+            </ol>
+        </section>
 
         <hr>
-        <h2>Lista de locais perigosos</h2> <br>
-        <dl> <!--Nesse tipo de lista, existem dois tipos de tag: description term <dt> e description detail <dd>-->
-            <dt>Polo norte</dt>
-            <dd>Eu ouvi falar que é <em>muito frio</em>.</dd> <!--Um espaço no início é adicionado-->
-            <dt>Polo sul</dt>
-            <dd>É muito frio também.</dd>
-        </dl>
+        <section id="locais agradáveis">
+            <h2>Lista de locais agradáveis</h2>
+            <ul> <!--Cada <li> corresponde a uma bolinha, sendo uma outra forma de representar listas, assim como listas
+                não ordenadas. Não é necessário, geralmente, indicar os parágrafos dentro da tag <li>.-->
+                <li> Cancún; </li>
+                <li> Machu Picchu; </li>
+                <li> Angkor Wat; </li>
+                <li> Abu Simbel; </li>
+                <li> Margaritaville; </li>
+                <li> Bahia Petempinch. </li>
+            </ul>
+        </section>
 
         <hr>
-        <a href="index-teste1.html">Clique aqui para ir na primeira página.</a>
+        <section id="locais perigosos">
+            <h2>Lista de locais perigosos</h2>
+            <dl> <!--Nesse tipo de lista, existem dois tipos de tag: description term <dt> e description detail <dd>-->
+                <dt>- Polo norte</dt>
+                <dd>A temperatura média no Polo Norte é de <em>— 34 ºC</em>. Isso ocorre porque o Polo Norte fica entre 
+                    dois oceanos e a poucos metros acima do nível do mar, atuando como uma espécie de depósito 
+                    térmico.</dd> <!--Um espaço no início é adicionado-->
+                <dt>- Polo sul</dt>
+                <dd>Considerado que o polo norte está na altura do mar, e que o polo Sul está a uma altitude mais elevada, 
+                    podemos concluir que o sul é <strong>mais frio que o norte</strong>.</dd>
+                <dt>- Amazônia</dt>
+                <dd>Animais perigosos, desmatamento ilegal, indigenas com comportamento desconhecido e exploradores armados
+                    que amam visitantes estrangeiros observando seus crimes! Certamente um local fabuloso para se visitar.
+                </dd>
+            </dl>
+        </section>
+
+        <hr>
+        <section id="links">
+            <p> Se você deseja aprender HTML também, aqui alguns links úteis: </p>
+            <br> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Tutorial de HTML (MDN)</a>.
+            <br> <a href="https://www.youtube.com/watch?v=kUMe1FH4CHE">Vídeo sobre o básico de HTML (freeCodeCamp)</a>
+            <!--Uma referência absoluta possui o nome completo da página web.-->
+            <hr>
+            <br> <a href="index-teste1.html">Clique aqui para ir na primeira página.</a> 
+        </section>
     </body>
 </html>                          

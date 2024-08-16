@@ -1,7 +1,20 @@
 html { /*Uma pequena parte usando CSS para deixar a página preta e a fonte maior.*/
     font-size: 22px
 }
-body {
-    background-color: #333;
-    color: whitesmoke;
+
+body { /*Mudando a cor da página*/
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+a { /*Mudando a cor dos links*/
+    color : rgb(0, 26, 255);
+}
+
+a:visited { /*Cor dos links após clicar*/
+    color: rgb(0, 13, 129)
+}
+
+a:hover, a:active { /*Cor dos links após passar o mouse por cima*/
+    color: #ff0000;
 }
