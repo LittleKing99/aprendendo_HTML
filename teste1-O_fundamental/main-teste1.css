@@ -1,0 +1,7 @@
+html { /*Uma pequena parte usando CSS para deixar a página preta e a fonte maior.*/
+    font-size: 22px
+}
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
