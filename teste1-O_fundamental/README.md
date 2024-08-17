@@ -1,6 +1,6 @@
-# Demo 2
+# Demo
 
-O terceiro repositório criado fora do GitHub.
+O quarto repositório criado no GitHub e incrementado através do uso de Git.
 
 # Descrição
 
