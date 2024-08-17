@@ -30,12 +30,14 @@
             <img src="img/gelo1.jpg" alt="neve e montanhas" width="600" height="360">
             <!--É possível definir a largura e altura.-->
             <br> <p>Mais neve e gelo.</p>
-            <img src="img/gelo2.jpg" alt="mais neve!" width="500">
+            <img src="img/gelo2.jpg" alt="mais neve!" title="Uma paisagem bem refrescante." width="500">
             <!--É recomendável definir tanto a largura quanto a altura.-->
+            <!--O campo 'title' é exibido ao parar o mouse na imagem-->
             <br> <p>Uma floresta queimando.</p>
             <img src="img/florestaQueimando.jpg" alt="floresta queimando" title="A floresta amazônica queimando."
-            width="600" height="400">
-            <!--O campo 'title' é exibido ao parar o mouse na imagem-->
+            width="600" height="400" loading="lazy">
+            <!--Nós temos dois tipos de 'loading': o 'edge', que não precisa ser definido e é o padrão, carregando
+            a imagem imediatamente, e o 'lazy', no qual só vai carregar a imagem se o usuário estiver 'perto' dela-->
         </section>
 
         <hr>
