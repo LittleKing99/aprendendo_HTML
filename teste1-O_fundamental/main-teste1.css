@@ -7,6 +7,10 @@ body { /*Mudando a cor da página*/
     color: rgb(0, 0, 0);
 }
 
+mark{ /*Mudando a cor do marca texto*/
+    background-color: #ff0000;
+}
+
 a { /*Mudando a cor dos links*/
     color : rgb(0, 26, 255);
 }

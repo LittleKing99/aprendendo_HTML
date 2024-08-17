@@ -12,28 +12,42 @@
     </head>
  
     <body>
-        <h1>-- Terceira página --</h1>
-        <p> Bem-vindo(a) ao meu terceiro teste em criar páginas usando HTML.</p>
+        <h1>-- <ins>Terceira página</ins> --</h1> <!--<ins> é para deixar sublinhado.-->
+        <p> Bem-vindo(a) ao meu <b>terceiro</b> teste em criar páginas usando <i>HTML</i>. 
+            <br> x<sub>2</sub> = 20<sup>3</sup></p> <!--<sub> é subscrito e <sup> é sobrescrito.-->
+        <!--Usar <b> para negrito e <i> para itálico é possível mas não vai ter o significado semântico de 
+            <strong e <em>.-->
+        <p>Dando significado semântico às aspas com HTML: <q>A vantagem de ter péssima memória é divertir-se 
+            muitas vezes com as mesmas coisas boas como se fosse a primeira vez</q> (Friedrich Nietzsche). </p>
         <hr>
 
         <nav>
+            <p><strong>Tópicos:</strong></p>
             <ul>
-                <li> <a href="#galeria">Galeria;</a> </li> 
+                <li> <a href="#galeria">Galeria;</a> </li>
+                <li> <a href="#codigo">Código;</a></li> 
                 <li> <a href="#links">Links</a></li>
             </ul>
         </nav>
 
         <hr>
         <section id="galeria">
-            <h3>Galeria</h3>
+            <h3>- Galeria</h3>
+            
             <p>Montanhas e um monte de neve.</p>
             <img src="img/gelo1.jpg" alt="neve e montanhas" width="600" height="360">
             <!--É possível definir a largura e altura.-->
+
             <br> <p>Mais neve e gelo.</p>
-            <img src="img/gelo2.jpg" alt="mais neve!" title="Uma paisagem bem refrescante." width="500">
-            <!--É recomendável definir tanto a largura quanto a altura.-->
-            <!--O campo 'title' é exibido ao parar o mouse na imagem-->
-            <br> <p>Uma floresta queimando.</p>
+            <figure> <!--Insere um espaço semelhante ao tab para as tags dentro do escopo-->
+                <img src="img/gelo2.jpg" alt="mais neve!" title="Uma paisagem bem refrescante." width="500">
+                <!--É recomendável definir tanto a largura quanto a altura.-->
+                <!--O campo 'title' é exibido ao parar o mouse na imagem-->
+                <figcaption>Neve agradável, gelo <del>duro</del> e um céu azul.</figcaption>
+                <!--<del> deixa o texto dentro do escopo com um risco no meio-->
+            </figure>
+
+            <br> <p><mark>Uma floresta queimando.</mark></p> <!--<mark> serve como um marca texto.-->
             <img src="img/florestaQueimando.jpg" alt="floresta queimando" title="A floresta amazônica queimando."
             width="600" height="400" loading="lazy">
             <!--Nós temos dois tipos de 'loading': o 'edge', que não precisa ser definido e é o padrão, carregando
@@ -41,13 +55,38 @@
         </section>
 
         <hr>
+        <section id="codigo">
+            <h3>- Exemplo de código em Java</h3>
+            <pre> <!--Os espaços e 'quebras de linha manuais' (que não foram ocasionadas por tags extras)
+                no escopo serão considerados na visualização no navegador.-->
+                    <code> if (true) {
+                                System.out.println("Infinito.");
+                            }   </code>
+                <!--O texto na tag <code> é monoespaçada para facilitar a visualização.-->
+            </pre>    
+        </section>
+
+        <hr>
+        <section id="citacao">
+            <h3>- Citação</h3> 
+            <p> Segundo a apostila: HTML5 e CSS3 com farinha e pimenta (Diego Eis, Elcio Ferreira)</p>
+            <blockquote cite="https://www.cin.ufpe.br/~dfop/Arquivos/Pacote%20Web/HTML5%20e%20CSS3%20com%20Farinha%20e%20Pimenta%20Diego%20Eis%20e%20Elcio%20Ferreira.pdf">
+                Nós produzimos websites acessíveis hoje por que ocorreram uma série de movimentos independentes 
+                entre os fabricantes de browsers e alguns profissionais da área que quebraram barreiras importantes.
+            </blockquote>
+            <!--Esta tag não vai mostrar nenhum link, mas manter a informação de onde foi retirada a frase é importante. 
+            Além disso, o texto dentro da tag será colocado mais à direita.-->
+        </section>
+
+        <hr>
         <section id="links">
-            <h3>Links</h3>
+            <h3>- Links</h3>
             <a href="index-teste1-1.html" target="_blank">Clique aqui para ir na primeira página.</a>
             <br> <a href="index-teste1-2.html" target="_blank">Clique aqui para ir na segunda página.</a>
 
         </section>
         <hr>
-        <p> <a href="/aprendendo_HTML/teste1-O_fundamental/index-teste1-3.html">Voltar para o início da página.</a> </p>
+        <p> <a href="/aprendendo_HTML/teste1-O_fundamental/index-teste1-3.html"><small>Voltar para o início da página.</small></a> </p>
+        <!--<small> deixa as letras pequenas dentro da tag-->
     </body>
 </html>                          
