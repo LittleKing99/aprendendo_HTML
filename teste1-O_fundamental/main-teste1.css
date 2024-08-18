@@ -1,3 +1,5 @@
+@charset "UTF-8"; /*Regra para indicar que é compatível com UTF-8.*/
+
 html { /*Uma pequena parte usando CSS para deixar a página branca e a fonte maior.*/
     font-size: 22px
 }
@@ -30,15 +32,21 @@ a:hover, a:active { /*Cor dos links após passar o mouse por cima*/
 
 h1.titulo-quarta-pagina { /*Mudando a cor do <h1> da quarta página*/
     color: blueviolet;
+    background-color: #d4aeff;
 }
 
 h3.titulo-verde{
     color:rgb(68, 0, 255);
     background-color: aqua;
+    text-decoration: underline;
 }
 
 hr {
     width: 100%;
     border: 1px solid rgb(0, 0, 0);
     margin: 10px auto; /* Centraliza a barra horizontal */
+}
+
+p.centro {
+    text-align: center;
 }
