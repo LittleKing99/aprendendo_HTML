@@ -7,6 +7,11 @@ body { /*Mudando a cor da página*/
     color: rgb(0, 0, 0);
 }
 
+body.pg4 {
+    background-color: #d2c9ff;
+    color: black;
+}
+
 mark{ /*Mudando a cor do marca texto*/
     background-color: #ff0000;
 }
@@ -25,4 +30,14 @@ a:hover, a:active { /*Cor dos links após passar o mouse por cima*/
 
 h1.titulo-quarta-pagina { /*Mudando a cor do <h1> da quarta página*/
     color: blueviolet;
+}
+
+h3.titulo-verde{
+    color:rgb(0, 182, 0);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px auto; /* Centraliza a barra horizontal */
 }
