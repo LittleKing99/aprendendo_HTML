@@ -82,6 +82,18 @@
         <p> Você, muito provavelmente, não é capaz de montar uma rotina sozinho usando este método. Então, eu recomendo um livro
             chamado: <a href="https://www.amazon.com.br/Ultra-aprendizado-habilidades-valiosas-competi%C3%A7%C3%A3o-carreira/dp/6555110058"
             target="_blank" rel="external">Ultra-aprendizado</a>. </p>
+
+        <h4>Imagem dinâmica (muda de acordo com o tamanho da janela): </h4>
+        <picture>
+            <!-- Se a largura da janela for menor ou igual a 750px, usa a imagem de 300x300 -->
+            <source media="(max-width: 750px)" srcset="img-pg4/imagensDi/fundo-branco-abstrato-300x300.jpg" type="image/jpeg">
+        
+            <!-- Se a largura da janela for menor ou igual a 1050px, usa a imagem de 700x700 -->
+            <source media="(max-width: 1050px)" srcset="img-pg4/imagensDi/fundo-realista-de-luzes-de-neon-700x700.jpg" type="image/jpeg">
+            
+            <!-- Imagem padrão para larguras maiores que 1050px, 1000x1000 é a imagem exibida -->
+            <img src="img-pg4/imagensDi/pngtree-faceted-abstract-background-1000x1000.jpg" alt="Imagem flexível" loading="lazy">
+        </picture>
     </section>
 
     <hr>
